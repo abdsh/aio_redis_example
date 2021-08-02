@@ -38,6 +38,12 @@ async def main():
     print(count_between)
     print("\n\n")
 
+    incr_value = await redis.zincrby(name, 10, 'c')
+    print("***********zincrby***********")
+    print(incr_value)
+    print("\n\n")
+
+
 
 
 
