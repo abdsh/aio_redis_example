@@ -43,6 +43,11 @@ async def main():
     print(incr_value)
     print("\n\n")
 
+    delete_at_most = await redis.zpopmax(name, count=2)
+    print("***********zpopmax***********")
+    print(delete_at_most)
+    print("\n\n")
+
 
 
 
